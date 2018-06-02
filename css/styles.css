@@ -270,6 +270,13 @@ li.nav a:hover {
     border-radius: 15px 15px 0px 0px;
 }
 
+.project2img {
+    background-image: url(../img/project3.JPG);
+    height: 450px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
 .project1-header {
     padding: 0em 3em;
     margin-top: 30px;
