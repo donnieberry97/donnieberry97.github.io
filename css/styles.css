@@ -244,6 +244,11 @@ li.nav a:hover {
 
 #projectSection {
     margin-bottom: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5em;
+    margin-left: 140px;
+    margin-right: 140px;
 }
 
 .project-card {
@@ -258,6 +263,7 @@ li.nav a:hover {
 
 .project1img {
     background-image: url(../img/project1.jpg);
+    background-size: cover;
     height: 450px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
@@ -265,6 +271,7 @@ li.nav a:hover {
 
 .project2img {
     background-image: url(../img/project2.JPG);
+    background-size: cover;
     height: 450px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
@@ -272,6 +279,15 @@ li.nav a:hover {
 
 .project3img {
     background-image: url(../img/project3.JPG);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.project4img {
+    background-image: url(../img/project4.JPG);
+    background-size: cover;
     height: 450px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
@@ -289,7 +305,7 @@ h5.project1 {
     color: #F6577A;
     font-weight: 500;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .skill {
@@ -478,6 +494,12 @@ a.terminal:hover {
     content: "";
 }
 
+h6.development {
+    color:#ddd;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
 footer {
     padding: 2em;
     font-weight: 300;
@@ -489,4 +511,64 @@ footer {
 
 body {
     background-color: #F5F8FB
+}
+
+
+@media (max-width:768px) {
+    html {
+        padding: 0em 2em;
+    }
+
+    #stripeColor {
+        display: none;
+    }
+    
+    
+    #name {
+        font-size: 3em;
+    }
+    
+    #terminal-main {
+        padding:1em;
+    }
+    
+#projectSection {
+    margin-bottom: 130px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 5em;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+    
+    .bottomSection {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 3em;
+    }
+    
+    .skillSection {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .skill {
+        padding:3px;
+    }
+    
+    .visitProject1 {
+    }
+    
+    .visitSite {
+        text-align: left;
+    }
+    
+    li.nav a {
+        font-size: 1.2em;
+    }
+    
+    li.nav {
+        margin-right: 0;
+    }
+    
 }
