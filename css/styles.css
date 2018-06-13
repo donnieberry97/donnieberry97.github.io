@@ -248,6 +248,7 @@ li.nav a:hover {
     grid-column-gap: 5em;
     margin-left: 140px;
     margin-right: 140px;
+    display: grid;
 }
 
 .project-card {
