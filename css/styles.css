@@ -313,7 +313,9 @@ h5.project1 {
     border: 2px solid #92eac0;
     padding: 8px;
     margin-right: 10px;
+    display: inline-block;
     margin-bottom: 10px;
+    margin-top: 10px;
     font-family: Camphor, Open Sans, Segoe UI, sans-serif;
     font-size: .85em;
     color: #525f7f;
@@ -326,8 +328,13 @@ h5.project1 {
     grid-template-columns: 50% 50%;
 }
 
+.skillSection {
+    position: relative;
+}
+
 .visitSite {
     text-align: right;
+    position: relative;
 }
 
 .visitProject1 {
@@ -338,6 +345,10 @@ h5.project1 {
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     text-decoration: none;
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .visitProject1:hover {
@@ -358,6 +369,11 @@ h5.project1 {
     margin-right: auto;
     margin-left: auto;
 }
+
+    .skillSection {
+        display: block;
+    }
+
 
 #terminal-header {
     width: 100%;
@@ -514,9 +530,13 @@ body {
 }
 
 
-@media (max-width:768px) {
-    html {
+@media (max-width:1100px) {
+    .mainContainer {
         padding: 0em 2em;
+    }
+    
+    html {
+        font-size: 70% !important;
     }
 
     #stripeColor {
@@ -550,11 +570,17 @@ body {
     
     .skillSection {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto;
+        display: flex;
+        align-content: space-between;
+        flex-grow: 1;
+        text-align: center;
     }
     
     .skill {
-        padding:3px;
+        flex-grow: 1;
     }
+    
     
     .visitProject1 {
     }
